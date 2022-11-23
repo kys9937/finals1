@@ -10,16 +10,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class Hansik extends AppCompatActivity {
 
 
-    Integer[] btnName = {R.id.kimchi_btn, R.id.bul_btn, R.id.h3_btn, R.id.h4_btn,
-            R.id.h5_btn,R.id.h6_btn,R.id.h7_btn,R.id.h8_btn};
-    Button[] btn = new Button[btnName.length];//선택지 추가하면 자동으로 늘어남
-    //Integer[] picture = {R.drawable.kimchi, R.drawable.bul};
-    ImageView image;
-    int i;
+
 
 
     @Override
@@ -27,22 +23,42 @@ public class Hansik extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hansik);
 
-        image = (ImageView) findViewById(R.id.image);
 
-        for (i = 0; i < btn.length; i++) {
-            btn[i] = (Button) findViewById(btnName[i]);
+        Intent intent = getIntent();//받기 전용 변수 만들기
+        int ind_MainMenu = intent.getIntExtra("Index",0);//MainMenu에서 index받는 역할
+
+        Integer[][] btnName = {{R.id.h1_btn, R.id.h2_btn, R.id.h3_btn, R.id.h4_btn,
+                R.id.h5_btn,R.id.h6_btn,R.id.h7_btn,R.id.h8_btn},//한식 음식 버튼
+                {R.id.c1_btn, R.id.c2_btn}};
+        Button[] btn = new Button[btnName[ind_MainMenu].length];//선택지 추가하면 자동으로 늘어남
+
+        Integer[] layoutName = {R.id.h1_layout, R.id.c1_layout};//MainMenu의 레이아웃 아이디
+        LinearLayout[] ll = new LinearLayout[layoutName.length];
+
+
+
+
+        for (int i = 0; i < layoutName.length; i++) {
+            ll[i] = (LinearLayout) findViewById(layoutName[i]);
+            ll[i].setVisibility(View.GONE);
         }
 
-        for (i = 0; i < btn.length; i++) {
-            final int index;
-            index = i;
+        ll[ind_MainMenu].setVisibility(View.VISIBLE);//선택한 레이아웃만 출력
 
-            btn[index].setOnClickListener(new View.OnClickListener() {
+        for (int i = 0; i < btn.length; i++) {
+            btn[i] = (Button) findViewById(btnName[ind_MainMenu][i]);
+        }
+
+        for (int i = 0; i < btn.length; i++) {
+            final int index_Hansik;
+            index_Hansik = i;
+
+            btn[index_Hansik].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //image.setImageResource(picture[i]);
                     Intent intent = new Intent(getApplicationContext(), Hansik_1.class);
-                    intent.putExtra("Index", index);//Hansik_1로 index보내는 역할
+                    intent.putExtra("ind_MainMenu", ind_MainMenu);//Hansik_1로 ind_MainMenu보내는 역할
+                    intent.putExtra("Index_Hansik", index_Hansik);//Hansik_1로 index보내는 역할
                     startActivity(intent);
                     //intent : 앱 구성요소(컴포넌트) 간에 작업 수행을 위한 정보를 전달하는 역할
                 }
