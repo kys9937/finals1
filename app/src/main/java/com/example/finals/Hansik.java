@@ -25,12 +25,13 @@ public class Hansik extends AppCompatActivity {
 
 
         Intent intent = getIntent();//받기 전용 변수 만들기
-        int ind_MainMenu = intent.getIntExtra("Index",0);//MainMenu에서 index받는 역할
+        int Index_MainMenu = intent.getIntExtra("Index",0);//MainMenu에서 index받는 역할
 
         Integer[][] btnName = {{R.id.h1_btn, R.id.h2_btn, R.id.h3_btn, R.id.h4_btn,
                 R.id.h5_btn,R.id.h6_btn,R.id.h7_btn,R.id.h8_btn},//한식 음식 버튼
-                {R.id.c1_btn, R.id.c2_btn}};
-        Button[] btn = new Button[btnName[ind_MainMenu].length];//선택지 추가하면 자동으로 늘어남
+                {R.id.c1_btn, R.id.c2_btn, R.id.c3_btn, R.id.c4_btn,
+                R.id.c5_btn, R.id.c6_btn, R.id.c7_btn, R.id.c8_btn}};
+        Button[] btn = new Button[btnName[Index_MainMenu].length];//선택지 추가하면 자동으로 늘어남
 
         Integer[] layoutName = {R.id.h1_layout, R.id.c1_layout};//MainMenu의 레이아웃 아이디
         LinearLayout[] ll = new LinearLayout[layoutName.length];
@@ -43,22 +44,22 @@ public class Hansik extends AppCompatActivity {
             ll[i].setVisibility(View.GONE);
         }
 
-        ll[ind_MainMenu].setVisibility(View.VISIBLE);//선택한 레이아웃만 출력
+        ll[Index_MainMenu].setVisibility(View.VISIBLE);//선택한 레이아웃만 출력
 
         for (int i = 0; i < btn.length; i++) {
-            btn[i] = (Button) findViewById(btnName[ind_MainMenu][i]);
+            btn[i] = (Button) findViewById(btnName[Index_MainMenu][i]);
         }
 
         for (int i = 0; i < btn.length; i++) {
-            final int index_Hansik;
-            index_Hansik = i;
+            final int Index_Hansik;
+            Index_Hansik = i;
 
-            btn[index_Hansik].setOnClickListener(new View.OnClickListener() {
+            btn[Index_Hansik].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(getApplicationContext(), Hansik_1.class);
-                    intent.putExtra("ind_MainMenu", ind_MainMenu);//Hansik_1로 ind_MainMenu보내는 역할
-                    intent.putExtra("Index_Hansik", index_Hansik);//Hansik_1로 index보내는 역할
+                    intent.putExtra("Index_MainMenu", Index_MainMenu);//Hansik_1로 ind_MainMenu보내는 역할
+                    intent.putExtra("Index_Hansik", Index_Hansik);//Hansik_1로 index보내는 역할
                     startActivity(intent);
                     //intent : 앱 구성요소(컴포넌트) 간에 작업 수행을 위한 정보를 전달하는 역할
                 }
