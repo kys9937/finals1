@@ -5,14 +5,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Hansik_1 extends AppCompatActivity {
 
+
+    int b_count=0, n_count=0;
+    int count =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hansik_1);
+
+
 
         Integer[][] picture = {{R.drawable.h1, R.drawable.h2, R.drawable.h3, R.drawable.h4,
                 R.drawable.h5,R.drawable.h6,R.drawable.h7,R.drawable.h8},
@@ -21,7 +31,11 @@ public class Hansik_1 extends AppCompatActivity {
                 {R.drawable.j1, R.drawable.j2, R.drawable.j3, R.drawable.j4,
                 R.drawable.j5},
                 {R.drawable.y1, R.drawable.y2, R.drawable.y3, R.drawable.y4,
-                R.drawable.y5}};
+                R.drawable.y5},
+                {R.drawable.b1, R.drawable.b2, R.drawable.b3, R.drawable.b4,
+                R.drawable.b5},
+                {R.drawable.d1, R.drawable.d2, R.drawable.d3, R.drawable.d4,
+                R.drawable.d5}};
         String[][] youtube = {{"https://www.youtube.com/watch?v=S7qcu7iFvB4",//김치
                 "https://www.youtube.com/watch?v=nVzwOOJLt24",//불고기
                 "https://www.youtube.com/watch?v=eeiqjyYgPew",//닭도리탕
@@ -52,13 +66,33 @@ public class Hansik_1 extends AppCompatActivity {
                  "https://www.youtube.com/watch?v=ohihzV6Z85k",//알리오 올리오 파스타
                  "https://www.youtube.com/watch?v=_881oO2R0ac"},//라따뚜이
                 //양식
-                {
-                }
+                {"https://www.youtube.com/watch?v=r9n_NaskEg4",//모닝빵
+                 "https://www.youtube.com/watch?v=9C8pzkZdtRg",//우유식빵
+                 "https://www.youtube.com/watch?v=UvcKvMHznpQ",//모카빵
+                 "https://www.youtube.com/watch?v=p_KQgme_9Ek",//멜론빵
+                 "https://www.youtube.com/watch?v=gFZAixyi5UQ"},//소시지빵
+                //제빵
+                {"https://www.youtube.com/watch?v=tQbKXmRJLDs",//푸딩
+                "https://www.youtube.com/watch?v=fT57H8x-_sw",//식혜
+                "https://www.youtube.com/watch?v=2C_s0eI_9uE",//마카롱
+                "https://www.youtube.com/watch?v=gYeuxdNotAA",//송편
+                 "https://www.youtube.com/watch?v=dogUZSCCwC4"}//딸기 스무디
        };
         ImageView image;
+        Button next_btn, back_btn;
+        Button text_button;
+        EditText edit_text;
+        TextView memo;
+
+        //Button btn_bookmk;//즐겨찾기 버튼
 
 
         image = (ImageView) findViewById(R.id.image);
+        next_btn = (Button) findViewById(R.id.next_btn);
+        back_btn = (Button) findViewById(R.id.back_btn);
+        text_button = (Button) findViewById(R.id.text_btn);
+        edit_text = (EditText) findViewById(R.id.edit_text);
+        memo = (TextView) findViewById(R.id.memo);
 
         Intent intent = getIntent();//받기 전용 변수 만들기
 
@@ -69,11 +103,64 @@ public class Hansik_1 extends AppCompatActivity {
         image.setImageResource(picture[Index_MainMenu][Index_hansik]);//선택한 버튼의 사진으로 바꾸기
 
 
+        next_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                b_count+=1;
+                count = n_count - b_count;
+                if(Index_hansik+count < 0){
+                    Toast.makeText(getApplicationContext(), "첫번째 메뉴입니다.",
+                            Toast.LENGTH_SHORT).show();
+                    count=count+1;
+                    b_count = b_count-1;
+                }
+                image.setImageResource(picture[Index_MainMenu][Index_hansik+count]);
+            }
+        });
+
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                n_count+=1;
+                count = n_count - b_count;
+                if(Index_hansik+count > picture[Index_MainMenu].length-1){
+                    Toast.makeText(getApplicationContext(), "마지막 메뉴입니다.",
+                            Toast.LENGTH_SHORT).show();
+                    count=count-1;
+                    n_count = n_count-1;
+                }
+                image.setImageResource(picture[Index_MainMenu][Index_hansik+count]);
+            }
+        });
+
+        count = n_count - b_count;
+
+        /*btn_bookmk = (Button) findViewById(R.id.btn_bookmk);//즐겨찾기 버튼
+
+        btn_bookmk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Bookmark.class);
+                intent.putExtra("Index_MainMenu", Index_MainMenu);
+                intent.putExtra("Index_Hansik", Index_hansik);
+                startActivity(intent);
+
+            }
+        });*/
+
 
         image.setOnClickListener(view -> {//유튜브 가기
-            String url = youtube[Index_MainMenu][Index_hansik];
+            String url = youtube[Index_MainMenu][Index_hansik+count];
             Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent1);
+        });
+
+
+        text_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                memo.setText(edit_text.getText().toString());
+            }
         });
     }
 }

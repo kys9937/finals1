@@ -42,7 +42,7 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="310dp"
         android:id="@+id/btn_5"
-        android:text="제과제빵"/>
+        android:text="즐겨찾기"/>
 
     <Button
         android:layout_width="100dp"
@@ -50,5 +50,6 @@
         android:layout_marginLeft="230dp"
         android:layout_marginTop="310dp"
         android:id="@+id/btn_6"
-        android:text="기타"/>
+        android:text="디저트"/>
+
 </RelativeLayout>
