@@ -20,7 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h1">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -45,7 +46,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h2">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -70,7 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h3">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -95,7 +98,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h4">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -120,7 +124,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h5">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -145,7 +150,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h6">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -170,7 +176,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h7">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -195,7 +202,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/h1_la_h8">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -228,7 +236,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c1">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -253,7 +262,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c2">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -278,7 +288,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c3">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -303,7 +314,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c4">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -328,7 +340,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c5">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -353,7 +366,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c6">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -378,7 +392,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c7">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -403,7 +418,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/c1_la_c8">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -437,7 +453,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/j1_la_j1">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -462,7 +479,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/j1_la_j2">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -487,7 +505,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/j1_la_j3">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -512,7 +531,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/j1_la_j4">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -537,7 +557,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/j1_la_j5">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -571,7 +592,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/y1_la_y1">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -596,7 +618,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/y1_la_y2">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -621,7 +644,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/y1_la_y3">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -646,7 +670,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/y1_la_y4">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -671,7 +696,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:id="@+id/y1_la_y5">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -694,5 +720,272 @@
         </LinearLayout>
         <!--양식 끝-->
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/b1_layout">
+            <!--android:visibility="invisible"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="모닝빵"
+                        android:id="@+id/b1_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="아침 식사용의 달지 않고 부드러운 빵."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="우유식빵"
+                        android:id="@+id/b2_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="밀가루 반죽에 우유를 넣어 만든 식빵."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="모카빵"
+                        android:id="@+id/b3_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="모카커피를 넣고 반죽하여 구운 빵."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="멜론빵"
+                        android:id="@+id/b4_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text=" 반죽에 멜론향 농축액을 첨가하거나 빵 속에 멜론맛 커스터드를 넣어 멜론맛이 나는 빵"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="소세지빵"
+                        android:id="@+id/b5_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="빵에 소세지를 넣고 여러 소스를 뿌린 빵"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--제과제빵 끝 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/d1_layout">
+            <!--android:visibility="invisible"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/d1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="푸딩"
+                        android:id="@+id/d1_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="서양식의 연한 생과자. 밀가루에 달걀, 우유, 크림, 설탕, 향료 따위를 섞고 과실, 야채 따위를 넣어 굽는다. 디저트로 많이 먹는다."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/b2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="식혜"
+                        android:id="@+id/d2_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="엿기름을 우린 웃물에 쌀밥을 말아 독에 넣어 더운 방에 삭히면 밥알이 뜨는데, 거기에 설탕을 넣고 끓여 차게 식혀 먹는다"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/d3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="마카롱"
+                        android:id="@+id/d3_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="아몬드나 코코넛, 밀가루, 달걀 흰자위, 설탕 따위를 넣어 만든 고급 과자."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/d4"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="송편"
+                        android:id="@+id/d4_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="멥쌀가루를 반죽하여 팥, 콩, 밤, 대추, 깨 따위로 소를 넣고 반달이나 모시조개 모양으로 빚어서 솔잎을 깔고 찐 떡. 흔히 추석 때 빚는다."/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/d5"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="딸기 스무디"
+                        android:id="@+id/d5_btn"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="딸기을 얼음과 함께 갈아서 걸쭉하게 만들어 내는 음료. 밀크셰이크처럼 우유나 요거트를 첨가하기도 한다."/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--제과제빵 끝 -->
     </LinearLayout>
 </ScrollView>

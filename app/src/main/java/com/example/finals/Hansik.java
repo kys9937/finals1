@@ -31,15 +31,15 @@ public class Hansik extends AppCompatActivity {
                 R.id.h5_btn,R.id.h6_btn,R.id.h7_btn,R.id.h8_btn},//한식 음식 버튼
                 {R.id.c1_btn, R.id.c2_btn, R.id.c3_btn, R.id.c4_btn,
                 R.id.c5_btn, R.id.c6_btn, R.id.c7_btn, R.id.c8_btn},
-                {R.id.j1_btn, R.id.j2_btn, R.id.j3_btn, R.id.j4_btn,
-                R.id.j5_btn},
-                {R.id.y1_btn, R.id.y2_btn, R.id.y3_btn, R.id.y4_btn,
-                R.id.y5_btn}
+                {R.id.j1_btn, R.id.j2_btn, R.id.j3_btn, R.id.j4_btn, R.id.j5_btn},
+                {R.id.y1_btn, R.id.y2_btn, R.id.y3_btn, R.id.y4_btn, R.id.y5_btn},
+                {R.id.b1_btn, R.id.b2_btn, R.id.b3_btn, R.id.b4_btn, R.id.b5_btn},
+                {R.id.d1_btn, R.id.d2_btn, R.id.d3_btn, R.id.d4_btn, R.id.d5_btn}
         };
         Button[] btn = new Button[btnName[Index_MainMenu].length];//선택지 추가하면 자동으로 늘어남
 
-        Integer[] layoutName = {R.id.h1_layout, R.id.c1_layout,
-                R.id.j1_layout, R.id.y1_layout};//MainMenu의 레이아웃 아이디
+        Integer[] layoutName = {R.id.h1_layout, R.id.c1_layout, R.id.j1_layout,
+                R.id.y1_layout, R.id.b1_layout, R.id.d1_layout};//MainMenu의 레이아웃 아이디
         LinearLayout[] ll = new LinearLayout[layoutName.length];
 
 

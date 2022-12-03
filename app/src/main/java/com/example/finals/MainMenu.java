@@ -19,7 +19,8 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.mainmenu);
 
         Button btn_1;
-        Integer[] btnName_MainMenu = {R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4};
+        Integer[] btnName_MainMenu = {R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4,
+                R.id.btn_5, R.id.btn_6};
         Button[] btn_MainMenu = new Button[btnName_MainMenu.length];
 
         for (int i = 0; i < btn_MainMenu.length; i++) {
